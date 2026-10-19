@@ -1,0 +1,202 @@
+/* Main App */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  max-width: 100%;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  object-fit: contain;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Cards */
+.card {
+  padding: 2em;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General Containers */
+.container,
+.main-container,
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  line-height: 1.3;
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  max-width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container,
+  .main-container,
+  .content {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+
+  .logo {
+    height: 5em;
+    padding: 1em;
+  }
+}
+
+/* Mobile: 441px - 600px */
+@media (max-width: 600px) {
+  .container,
+  .main-container,
+  .content {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  .logo {
+    height: 4.5em;
+    padding: 0.75em;
+  }
+
+  button {
+    padding: 10px 16px;
+  }
+}
+
+/* Small Mobile: 320px - 440px */
+@media (max-width: 440px) {
+  #root {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .container,
+  .main-container,
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .logo {
+    height: 3.5em;
+    padding: 0.5em;
+  }
+
+  button {
+    max-width: 100%;
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 360px) {
+  .container,
+  .main-container,
+  .content {
+    padding: 8px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+/* Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
